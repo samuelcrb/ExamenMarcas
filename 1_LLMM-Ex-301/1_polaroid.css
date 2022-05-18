@@ -1,0 +1,92 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#flex_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 200px;
+    width: 180px;
+    padding: 12px;
+    border: 1px solid rgb(116, 116, 116);
+}
+
+.tarjeta div{
+    min-height: 100px;
+    border: 1px solid #ccc;
+    animation: cambioColor 4.5s infinite;
+}
+
+#img{
+    display: none;
+}
+
+.tarjeta h3{
+    text-align: center;
+}
+
+/* Animacion de las fotos de los diferentes polaroids */
+@keyframes cambioColor {
+    0%{
+        background-color: red;
+    }
+    25%{
+        background-color: orange;
+    }
+    50%{
+        background-color: yellow;
+    }
+    75%{
+        background-color: green;
+    }
+    100%{
+        background-color: blue;
+    }
+}
+
+/* Delay de la animacion 1s de diferencia con respecto al polaroid de la izquierda */
+#flex_container :nth-child(2) div{
+    animation-delay: 1s;
+}
+#flex_container :nth-child(3) div{
+    animation-delay: 2s;
+}
+#flex_container :nth-child(4) div{
+    animation-delay: 3s;
+}
+
+/* Rotacion de tarjetas */
+
+.tarjeta:nth-child(even) {
+    transform: rotate(10deg);
+}
+
+.tarjeta:nth-child(odd){
+    transform: rotate(-25deg);
+}
+
+/* Animacion 'grow' para cada tarjeta cuando se hace un hover sobre esta */
+.tarjeta:hover{
+    animation: grow 1s ease-in forwards;
+}
+
+
+@keyframes grow {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.5);
+    }
+}
+

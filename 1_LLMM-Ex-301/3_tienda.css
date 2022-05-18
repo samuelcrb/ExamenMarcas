@@ -1,0 +1,45 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 193, 19);
+    min-height: 65px;
+}
+
+#containerProd{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    
+}
+
+.producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    border: 1px solid #000;
+    min-height: 200px;
+}
+
+.producto:hover{
+    animation: grow 1s ease-in forwards;}
+
+@keyframes grow {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+

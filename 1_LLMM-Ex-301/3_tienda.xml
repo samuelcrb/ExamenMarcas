@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="3_tienda.xsl" type="text/xsl"?>  
+
+<tienda>
+             
+    <title>Tienda Online</title>
+    <encabezado>Bienvenid@s a mi tienda</encabezado>
+    <descripcion>Esto es una tienda online que vende productos a través de internet</descripcion>
+
+    <productos>
+
+        <producto>
+            <tituloProducto> Motosierra </tituloProducto>
+            <descripcionProducto> Tamaño estándar con ergonomía perfecta para una jornada intensa de trabajo</descripcionProducto>
+            <precio>230€</precio>
+        </producto>
+
+        <producto>
+            <tituloProducto> Pala </tituloProducto>
+            <descripcionProducto> Mastil de madera de roble con un mango de aluminio recubierto de goma para mayor ergonomía</descripcionProducto>
+            <precio>62€</precio>
+        </producto>
+
+        <producto>
+            <tituloProducto> Pico </tituloProducto>
+            <descripcionProducto> Mastil de madera de roble con estrías en la madera para una mejor sujección</descripcionProducto>
+            <precio>62€</precio>
+        </producto>
+
+        <producto>
+            <tituloProducto> Mono de trabajo </tituloProducto>
+            <descripcionProducto> Acabados de primera calidad con tejido especial anti cortes</descripcionProducto>
+            <precio>50€</precio>
+        </producto>
+    
+    </productos>
+             
+</tienda>
